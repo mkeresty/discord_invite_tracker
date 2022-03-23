@@ -22,15 +22,15 @@ async def invite(ctx): #!upgrade
     rolelist=[]
     for role in person.roles:
         rolelist.append(role.name)
-    print(rolelist)
+    #print(rolelist)
     x = await ctx.guild.invites()
-    print(x)
+    #print(x)
     totalInvites = 0
     for i in await ctx.guild.invites():
         if i.inviter == ctx.author:
-            print(i.inviter)
+            #print(i.inviter)
             totalInvites += i.uses
-    print(totalInvites)        
+    #print(totalInvites)        
     if totalInvites > 1:
         if "CannaDAO cultivator" not in rolelist:
             ogrole = discord.utils.get(person.guild.roles, name = "CannaDAO cultivator")

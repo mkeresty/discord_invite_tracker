@@ -15,7 +15,7 @@ async def on_ready():
 
 
 @bot.command(pass_context=True)
-async def invite(ctx): #!upgrade
+async def cannainvite(ctx): #!upgrade
     person= ctx.message.author
     user = ctx.message.author.id
     

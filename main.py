@@ -31,7 +31,7 @@ async def cannainvite(ctx): #!upgrade
             #print(i.inviter)
             totalInvites += i.uses
     #print(totalInvites)        
-    if totalInvites > 1:
+    if totalInvites > 2:
         if "CannaDAO cultivator" not in rolelist:
             ogrole = discord.utils.get(person.guild.roles, name = "CannaDAO cultivator")
             await person.add_roles(ogrole, atomic=True)

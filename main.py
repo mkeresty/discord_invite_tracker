@@ -6,7 +6,7 @@ TOKEN='OTU1OTY0NTkwMzEzODQwNjYx.YjpVZw.b-SoCMYiAQP_LZ2_8yZFsQoWBB0'
 
 client = discord.Client()
 
-bot = commands.Bot(command_prefix="!", description="invite bot")
+bot = commands.Bot(command_prefix="!", description="ogrole")
 
 
 @bot.event

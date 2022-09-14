@@ -2,7 +2,7 @@ import discord
 
 from discord.ext import commands
 
-TOKEN='OTU1OTY0NTkwMzEzODQwNjYx.YjpVZw.b-SoCMYiAQP_LZ2_8yZFsQoWBB0'
+TOKEN=''
 
 client = discord.Client()
 
@@ -32,15 +32,15 @@ async def cannainvite(ctx): #!upgrade
             totalInvites += i.uses
     #print(totalInvites)        
     if totalInvites > 2:
-        if "CannaDAO cultivator" not in rolelist:
-            ogrole = discord.utils.get(person.guild.roles, name = "CannaDAO cultivator")
+        if "___________" not in rolelist:
+            ogrole = discord.utils.get(person.guild.roles, name = "")
             await person.add_roles(ogrole, atomic=True)
-            embed = discord.Embed(title = person, description = str(person) + ", congrats! You are now an CannaDAO cultivator.")
+            embed = discord.Embed(title = person, description = str(person) + ", congrats! You are now an ______________")
             embed.add_field(name = 'Invites: ',value = str(totalInvites), inline = False)
             await ctx.channel.send(embed = embed)
             
         else:
-            embed = discord.Embed(title = person, description = str(person) + ", you already have CannaDAO cultivator role.")
+            embed = discord.Embed(title = person, description = str(person) + ", you already have ______________ role.")
             embed.add_field(name = 'Invites: ',value = str(totalInvites), inline = False)
             await ctx.channel.send(embed = embed)
         
